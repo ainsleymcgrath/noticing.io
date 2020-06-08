@@ -1,0 +1,7 @@
+{{ define "main" }}
+<h1>noticing.io</h2>
+{{ range .Site.RegularPages }}
+  {{ .Params.content }}
+  <p>{{ .Params.title }}</p>
+{{ end }}
+{{ end }}
